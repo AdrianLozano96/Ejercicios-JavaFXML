@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="ventanaLista" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: d9d9d9;"
+            xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@css/myStyles.css"
+            fx:controller="com.adrianl.adrianfxml.controll.ListPersonsController">
+    <children>
+      <ListView fx:id="listaPersonas" layoutX="122.0" layoutY="12.0" prefHeight="464.0" prefWidth="222.0" />
+
+      <Button fx:id="btnListHome" mnemonicParsing="false" onAction="#volverAtras" prefHeight="35.0" prefWidth="98.0" text="%btn.home" />
+      <Button fx:id="update" layoutX="14.0" layoutY="148.0" mnemonicParsing="false" onAction="#myPersons" prefHeight="26.0" prefWidth="100.0" text="%btn.actualizar" />
+
+      <ImageView fx:id="i_imagen" fitHeight="161.0" fitWidth="241.0" layoutX="352.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="i_nombre" layoutX="371.0" layoutY="200.0" prefHeight="35.0" prefWidth="221.0" text="nombre" />
+      <Label fx:id="i_genero" layoutX="371.0" layoutY="244.0" prefHeight="35.0" prefWidth="222.0" text="genero" />
+      <Label fx:id="i_lugar" layoutX="371.0" layoutY="296.0" prefHeight="35.0" prefWidth="222.0" text="lugar" />
+      <Label fx:id="i_correo" layoutX="371.0" layoutY="349.0" prefHeight="35.0" prefWidth="222.0" text="correo" />
+      <Label fx:id="i_movil" layoutX="371.0" layoutY="408.0" prefHeight="35.0" prefWidth="222.0" text="movil" />
+
+    </children>
+</AnchorPane>

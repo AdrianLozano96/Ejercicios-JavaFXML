@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="principal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: d9d9d9;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adrianl.resumen.HelloController">
+   <children>
+      <Button fx:id="btn_menu" mnemonicParsing="false" onAction="#menuAction" prefHeight="36.0" prefWidth="75.0" text="%key.menu" />
+      <VBox fx:id="vbox_menu" layoutY="36.0" prefHeight="466.0" prefWidth="75.0">
+         <children>
+            <AnchorPane prefHeight="468.0" prefWidth="75.0">
+               <children>
+                  <Button fx:id="btn_lista" mnemonicParsing="false" onAction="#listaAction" prefHeight="29.0" prefWidth="75.0" text="%key.lista" />
+                  <Button fx:id="btn_tabla" layoutY="36.0" mnemonicParsing="false" onAction="#tablaAction" prefHeight="36.0" prefWidth="75.0" text="%key.tabla" />
+                  <Button fx:id="btn_graficos" layoutY="81.0" mnemonicParsing="false" onAction="#graficosAction" prefHeight="36.0" prefWidth="75.0" text="%key.grapicos" />
+                  <Button fx:id="btn_salir" layoutY="433.0" mnemonicParsing="false" onAction="#salirAction" prefHeight="30.0" prefWidth="75.0" text="%key.salir" />
+                  <Button fx:id="cambio_color" layoutY="172.0" mnemonicParsing="false" onAction="#fondoAction" prefHeight="30.0" prefWidth="75.0" text="%key.fondo" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="vistas_anidadas" layoutX="75.0" layoutY="36.0" prefHeight="466.0" prefWidth="524.0">
+         <children>
+            <fx:include fx:id="lista" source="lista.fxml" visible="false" />
+            <fx:include fx:id="tabla" source="tabla.fxml" visible="false" />
+            <fx:include fx:id="graficos" source="graficos.fxml" visible="false" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

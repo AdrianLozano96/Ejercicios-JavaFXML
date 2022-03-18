@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="ventanaPrueba" alignment="CENTER" prefHeight="500.0" prefWidth="600.0" spacing="20.0"
+      style="-fx-background-color: d9d9d9;" xmlns="http://javafx.com/javafx/11.0.2" stylesheets="@css/myStyles.css"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adrianl.adrianfxml.controll.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Label fx:id="welcomeText" />
+    <Button onAction="#onHelloButtonClick" text="%boton.saludo" />
+   <Button mnemonicParsing="false" onAction="#salirAtras" text="%btn.salir" />
+</VBox>

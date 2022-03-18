@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="vistaGrafica" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: d9d9d9;" stylesheets="@css/myStyles.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adrianl.adrianfxml.controll.GraphPersons">
+   <children>
+      <PieChart fx:id="g_genero" layoutX="18.0" layoutY="132.0" prefHeight="215.0" prefWidth="275.0" />
+      <PieChart fx:id="g_pais" layoutX="280.0" layoutY="132.0" prefHeight="248.0" prefWidth="310.0" />
+      <Button fx:id="volver" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#volver" text="%btn.home" />
+      <Button fx:id="update" layoutX="254.0" layoutY="40.0" mnemonicParsing="false" onAction="#myPersons" text="%btn.actualizar" />
+   </children>
+</AnchorPane>

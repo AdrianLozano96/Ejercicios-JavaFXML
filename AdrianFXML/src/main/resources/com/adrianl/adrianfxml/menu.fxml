@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: d9d9d9;" stylesheets="@css/myStyles.css"
+            xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.adrianl.adrianfxml.controll.MenuController">
+   <children>
+      <VBox fx:id="mi_menu" layoutX="1.0" layoutY="49.0" prefHeight="452.0" prefWidth="151.0">
+         <children>
+            <Label fx:id="texto" prefHeight="26.0" prefWidth="151.0" text="%label.menu" />
+            <Button fx:id="btn_personas" mnemonicParsing="false" onAction="#ventanaPersonas" prefHeight="38.0" prefWidth="153.0"
+                    text="%btn.personas">
+               <graphic>
+                  <FontIcon iconLiteral="fas-user" iconSize="32" />
+               </graphic>
+            </Button>
+            <Button fx:id="btn_grafica" mnemonicParsing="false" onAction="#ventanaGrafica" prefHeight="42.0" prefWidth="153.0" text="%btn.graficas">
+               <graphic>
+                  <FontIcon iconLiteral="fab-deezer" iconSize="32" />
+               </graphic>
+            </Button>
+            <Button fx:id="btn_opciones" mnemonicParsing="false" onAction="#ventanaInfo" prefHeight="46.0" prefWidth="152.0" text="%btn.info">
+               <graphic>
+                  <FontIcon iconLiteral="fas-info-circle" iconSize="32" />
+               </graphic>
+            </Button>
+            <AnchorPane prefHeight="266.0" prefWidth="152.0" />
+            <Button fx:id="btn_salir" mnemonicParsing="false" onAction="#salirPrograma" prefHeight="38.0" prefWidth="154.0" text="%btn.salir">
+               <graphic>
+                  <FontIcon iconLiteral="fab-windows" iconSize="32" />
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <Button fx:id="menu" mnemonicParsing="false" onAction="#mostrarMenu" prefHeight="46.0" prefWidth="119.0" text="%btn.menu" />
+      <ImageView fitHeight="238.0" fitWidth="414.0" layoutX="203.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@css/fondo.png" />
+         </image>
+      </ImageView>
+
+      <fx:include fx:id="principio" source="hello-view.fxml" visible="false" />
+      <fx:include fx:id="lista" source="list-persons.fxml" visible="false" />
+      <fx:include fx:id="graficas" source="graph-persons.fxml" visible="false" />
+
+   </children>
+</AnchorPane>

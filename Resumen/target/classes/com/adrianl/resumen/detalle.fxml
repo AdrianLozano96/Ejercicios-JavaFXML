@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="padre_detalle" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: d9d9d9;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adrianl.resumen.DetalleController">
+   <children>
+      <Label fx:id="l_nombre" layoutX="134.0" layoutY="103.0" prefHeight="19.0" prefWidth="132.0" text="Nombre" />
+      <Label fx:id="l_genero" layoutX="134.0" layoutY="153.0" prefHeight="19.0" prefWidth="132.0" text="Genero" />
+      <Label fx:id="l_edad" layoutX="134.0" layoutY="200.0" prefHeight="19.0" prefWidth="132.0" text="Edad" />
+      <Button fx:id="btn_cerrar" layoutX="286.0" layoutY="14.0" mnemonicParsing="false" onAction="#cerrarAction" text="%key.cerrar" />
+   </children>
+</AnchorPane>

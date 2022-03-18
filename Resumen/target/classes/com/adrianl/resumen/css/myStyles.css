@@ -1,0 +1,20 @@
+.button {
+    -fx-border-color: null;
+    -fx-background-color: #998686;
+    -fx-background-radius: 2px;
+    -fx-font-size: 14px;
+    -fx-text-fill: #eeeeee;
+}
+
+.button:hover {
+    -fx-background-color: #a09578;
+
+}
+.label{ -fx-font-family:Papyrus;}
+/*
+-fx-text-fill: #white;
+.background{
+    -fx-background-color: #d9d9d9;
+}
+#elemento{  -fx-font-size:150%;   -fx-font-family:Papyrus;   -fx-background-color: red;  }
+ */
